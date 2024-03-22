@@ -1,8 +1,8 @@
 # summit_arm_sim - Simulation Design of a Robotic Mobile Manipulator
 Isaacsim ros2 simulation and control for Summit mobile platform and robot arms
 
-![Robot Image](src/assets/robot_image.png)
-
+![Navigation](src/assets/navigation.png)
+![Manipulation](src/assets/manipulation.png)
 
 ## Description
 
@@ -27,7 +27,7 @@ The repository contains the necessary code, configurations, and documentation to
 
 1. Install [Isaac Sim](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/install_workstation.html#isaac-sim-app-install-workstation) by following the installation instructions provided in the official documentation.
 
-2. Install [ROS2 Foxy](https://docs.ros.org/en/foxy/Installation.html) by following the installation instructions provided in the official documentation.
+2. Install [ROS2](https://docs.ros.org/) that fits your system by following the installation instructions provided in the official documentation.
 
 3. Install [nav2](https://navigation.ros.org/getting_started/index.html) by following the installation instructions provided in the official documentation.
 
