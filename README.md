@@ -1,4 +1,4 @@
-# summit_arm_sim - Simulation Design of a Robotic Mobile Manipulator
+# summit_arm_drone - Simulation Design of a Robotic Mobile Manipulator with Drone in Isaacsim.
 Isaacsim ros2 simulation and control for Summit mobile platform and robot arms
 
 ![Navigation](src/assets/navigation.png)
