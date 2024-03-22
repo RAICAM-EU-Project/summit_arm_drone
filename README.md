@@ -40,13 +40,13 @@ Also, this repository do not need to use a docker of isaacsim, which needs [Nvid
 5. Clone the repository:
 
    ```shell
-   git clone https://github.com/lonelyfluency/summit_arm_sim.git
+   git clone https://github.com/RAICAM-EU-Project/summit_arm_drone.git
    ```
 
 6. Build your packages:
 
    ```shell
-   cd summit_arm_sim
+   cd summit_arm_drone
    colcon build
    ```
 7. Install and build a Ubuntu 22.04 Humble based Docker image with Moveit2.
