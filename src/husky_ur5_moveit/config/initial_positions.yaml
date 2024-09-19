@@ -1,0 +1,11 @@
+# Default initial positions for husky_ur5's ros2_control fake system
+
+initial_positions:
+  finger_joint: 0
+  right_outer_knuckle_joint: 0
+  ur5_elbow_joint: 0
+  ur5_shoulder_lift_joint: 0
+  ur5_shoulder_pan_joint: 0
+  ur5_wrist_1_joint: 0
+  ur5_wrist_2_joint: 0
+  ur5_wrist_3_joint: 0

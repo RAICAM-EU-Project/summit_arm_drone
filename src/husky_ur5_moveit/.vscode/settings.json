@@ -1,0 +1,14 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/dada/raicam_ws/summit_arm_sim/install/ur5_isaac_simulation/lib/python3.10/site-packages",
+        "/home/dada/raicam_ws/summit_arm_sim/install/isaac_ros_navigation_goal/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/dada/raicam_ws/summit_arm_sim/install/ur5_isaac_simulation/lib/python3.10/site-packages",
+        "/home/dada/raicam_ws/summit_arm_sim/install/isaac_ros_navigation_goal/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

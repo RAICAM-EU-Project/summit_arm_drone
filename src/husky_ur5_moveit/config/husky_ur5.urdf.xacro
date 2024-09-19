@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="husky_ur5">
+    <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+
+    <!-- Import husky_ur5 urdf file -->
+    <xacro:include filename="$(find husky_isaac_sim)/urdf/husky_ur5.urdf" />
+
+    <!-- Import control_xacro -->
+    <xacro:include filename="$(find husky_ur5_moveit)/config/husky_ur5.ros2_control.xacro" />
+
+
+    <xacro:husky_ur5_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/>
+
+</robot>

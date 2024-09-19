@@ -111,7 +111,7 @@ Also, this repository do not need to use a docker of isaacsim, which needs [Nvid
 
 
 
-## Usage
+## Usage for summit + franka + drone
 
 1. Launch the simulation environment by opening the following .usd file in the Isaac Sim:
 `src/robot_description/summit_xl_franka_navigation.usd`
@@ -146,6 +146,28 @@ Also, this repository do not need to use a docker of isaacsim, which needs [Nvid
    ```
 
 7. To work together with the drone, open the following .usd file in the Isaac Sim: `src/robot_description/summit_xl_franka_drone.usd`
+
+## Usage for husky + ur5
+
+![Husky](src/assets/husky_ur5.png)
+
+1. Launch the simulation environment by opening the following .usd file in the Isaac Sim:
+`src/robot_description/husky_with_ur5.usd`
+
+2. Start the simulation in Isaac Sim
+
+3. The following launch file executes the UR5 and Robotiq 2F-140 controllers and also opens RVIZ2:
+   ```shell
+   ros2 launch ur5_isaac_simulation ur5_isaac_ros2.launch.py
+   ```
+4. Run the UR5 Isaac Simulation main node
+   ```shell
+   ros2 run ur5_isaac_simulation ur5_isaac_ros2
+   ```
+5. Husky control
+   ```shell
+   ros2 run teleop_twist_keyboard teleop_twist_keyboard
+   ```
 
 
 ## Features

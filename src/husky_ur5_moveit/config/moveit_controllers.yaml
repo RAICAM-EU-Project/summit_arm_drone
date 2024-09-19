@@ -1,0 +1,38 @@
+# MoveIt uses this configuration for controller management
+
+trajectory_execution:
+  allowed_execution_duration_scaling: 1.2
+  allowed_goal_duration_margin: 0.5
+  allowed_start_tolerance: 0.01
+  trajectory_duration_monitoring: true
+  wait_for_joint_state_timeout: 5.0
+
+moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControllerManager
+
+moveit_simple_controller_manager:
+  controller_names:
+    - ur5_arm_controller
+    - robotiq_gripper_controller
+
+  ur5_arm_controller:
+    type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory
+    default: true
+    joints:
+      - ur5_shoulder_pan_joint
+      - ur5_shoulder_lift_joint
+      - ur5_elbow_joint
+      - ur5_wrist_1_joint
+      - ur5_wrist_2_joint
+      - ur5_wrist_3_joint
+    action_ns: follow_joint_trajectory
+    default: true
+  robotiq_gripper_controller:
+    type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory
+    default: true
+    joints:
+      - finger_joint
+      - right_outer_knuckle_joint
+    action_ns: follow_joint_trajectory
+    default: true

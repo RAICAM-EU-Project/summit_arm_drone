@@ -1,0 +1,10 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: husky_isaac_sim
+    relative_path: urdf/husky_ur5.urdf
+  srdf:
+    relative_path: config/husky_ur5.srdf
+  package_settings:
+    author_name: plus
+    author_email: ppppplustjh@gmail.com
+    generated_timestamp: 1716650167

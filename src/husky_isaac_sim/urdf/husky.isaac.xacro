@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="husky">
+  <!-- robot name parameter -->
+  <!-- <xacro:arg name="name" default="" /> -->
+
+  <xacro:arg name="prefix" default="husky_" />
+  <xacro:arg name="path_meshes" default="file:///home/husky_ws/src/husky/husky_description/meshes" />
+  <xacro:arg name="path_mesh_accessories" default="file:///home/husky_ws/src/husky_isaac_sim/meshes" />
+
+  <xacro:include filename="$(find husky_isaac_sim)/urdf/husky_macro.urdf.xacro" />
+
+  <!-- Load husky description -->
+  <xacro:husky prefix="$(arg prefix)" path_meshes="$(arg path_meshes)" path_mesh_accessories="$(arg path_mesh_accessories)" />
+
+  <!-- Optional custom includes. -->
+  <xacro:include filename="$(arg urdf_extras)" />
+
+</robot>
