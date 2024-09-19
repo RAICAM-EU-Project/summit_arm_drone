@@ -46,7 +46,8 @@ Also, this repository do not need to use a docker of isaacsim, which needs [Nvid
 6. Build your packages:
 
    ```shell
-   cd summit_arm_drone
+   sudo apt install ros-humble-vision-msgs ros-humble-control-msgs ros-humble-tf-transformations ros-humble-joint-state-publisher ros-humble-xacro
+   cd summit_arm_sim
    colcon build
    ```
 7. Install and build a Ubuntu 22.04 Humble based Docker image with Moveit2.
