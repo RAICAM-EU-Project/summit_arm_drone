@@ -169,8 +169,11 @@ Also, this repository do not need to use a docker of isaacsim, which needs [Nvid
    ```shell
    ros2 run teleop_twist_keyboard teleop_twist_keyboard
    ```
-
-
+### Usage for husky + ur5 + valve
+Same as above but open:
+```shell
+summit_arm_drone/src/robot_description/husky_with_ur5_and_valve.usd 
+```
 ## Features
 
 - Utilizes the Isaac Sim simulation tool and ROS framework for controlling and simulating robotic systems.
